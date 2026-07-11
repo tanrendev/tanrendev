@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 200" width="830" height="200" role="img" aria-labelledby="t d">
+  <title id="t">Now spinning: To The Sky by [IVY]</title>
+  <desc id="d">Turntable card: the most played track of the last four weeks.</desc>
+  <style>@media (prefers-reduced-motion: reduce) { .sheen { display: none; } }</style>
+  <rect x="0.5" y="0.5" width="829" height="199" rx="12" fill="#F3EEE5" stroke="#D7CDBA"/>
+  <circle cx="105" cy="100" r="66" fill="#211B14"/>
+  <circle cx="105" cy="100" r="36" fill="none" stroke="#2C241C" stroke-width="2"/><circle cx="105" cy="100" r="42.5" fill="none" stroke="#2C241C" stroke-width="2"/><circle cx="105" cy="100" r="49" fill="none" stroke="#2C241C" stroke-width="2"/><circle cx="105" cy="100" r="55.5" fill="none" stroke="#2C241C" stroke-width="2"/><circle cx="105" cy="100" r="62" fill="none" stroke="#2C241C" stroke-width="2"/>
+  <g class="sheen" opacity="0.10">
+    <path d="M105,100 L87.92,36.25 A66,66 0 0 1 122.08,36.25 Z" fill="#FFFFFF">
+      <animateTransform attributeName="transform" type="rotate" from="0 105 100" to="360 105 100" dur="9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <circle cx="105" cy="100" r="27" fill="#BF451C"/>
+  <circle cx="105" cy="100" r="3.5" fill="#F3EEE5"/>
+  <text x="210" y="64" font-family="'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" letter-spacing="2.4" fill="#A4380F">NOW SPINNING</text>
+  <text x="210" y="106" font-family="Bitter, Georgia, 'Times New Roman', serif" font-size="30" font-weight="800" fill="#211B14">To The Sky</text>
+  <text x="210" y="134" font-family="'IBM Plex Sans', -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#6C6256">[IVY]</text>
+  <g><rect x="210" y="150" width="47" height="20" rx="5" fill="none" stroke="#D7CDBA"/><text x="233.5" y="164" font-family="'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" text-anchor="middle" fill="#6C6256">dance</text></g>
+</svg>

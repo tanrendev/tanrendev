@@ -16,7 +16,8 @@ Backend systems · Python · application security
 #### `// projects`
 
 <!-- projects:start -->
-
+- [jig](https://github.com/tanrendev/jig): Personal Claude Code toolkit.
+- [tanren.dev](https://tanren.dev): Personal site. Writing, and a music curation feed.
 <!-- projects:end -->
 
 #### `// stack`
@@ -26,7 +27,9 @@ Python · Django · FastAPI · PostgreSQL · Redis · Docker · AWS · Linux
 #### `// now spinning`
 
 <!-- music:start -->
-
+<a href="https://www.youtube.com/watch?v=XC_yM6H2ukU"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-primary-dark.svg"><img src="assets/music-primary-light.svg" alt="Now spinning: To The Sky by [IVY]" width="100%"></picture></a>
+<a href="https://www.youtube.com/watch?v=GkmSpbGO0eM"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-1-dark.svg"><img src="assets/music-row-1-light.svg" alt="Xx by Mounika." width="100%"></picture></a>
+<a href="https://open.spotify.com/track/7bUgkEuZV7kppzH2bDnQUF"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-2-dark.svg"><img src="assets/music-row-2-light.svg" alt="ೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋ… by Fine-Sir-1584660650" width="100%"></picture></a>
 <!-- music:end -->
 
 #### `// reach`

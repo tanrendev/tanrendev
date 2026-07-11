@@ -63,7 +63,11 @@ ignore = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
+"main.py" = [
+    "T201",  # print — the CLI reports through stdout/stderr by design.
+]
 "tests/**/*.py" = [
+    "PT",    # pytest-style rules — the test suite standardizes on unittest.
     "S101",  # assert — allow plain assertions in tests.
 ]
 
