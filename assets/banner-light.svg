@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-labelledby="banner-title banner-desc">
+  <title id="banner-title">tanren: ten years at the bench</title>
+  <desc id="banner-desc">Wordmark banner in the hot iron theme: warm sand surface, a faint heat glow at the top edge, a temper-gradient hairline along the bottom.</desc>
+  <defs>
+    <linearGradient id="temper" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8703A"/>
+      <stop offset="0.26" stop-color="#E6C079"/>
+      <stop offset="0.44" stop-color="#D29B45"/>
+      <stop offset="0.6" stop-color="#B06A35"/>
+      <stop offset="0.8" stop-color="#7B5B86"/>
+      <stop offset="1" stop-color="#4A6B8A"/>
+    </linearGradient>
+    <radialGradient id="heat-wash" gradientUnits="userSpaceOnUse" cx="600" cy="-120" r="320" gradientTransform="matrix(2.4 0 0 1 -840 0)">
+      <stop offset="0" stop-color="#D85621" stop-opacity="0.2"/>
+      <stop offset="0.7" stop-color="#D85621" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame">
+      <rect width="1200" height="260" rx="12"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="260" fill="#F3EEE5"/>
+    <rect width="1200" height="260" fill="url(#heat-wash)"/>
+    <rect y="257" width="1200" height="1" fill="#E0D8C8"/>
+    <rect y="258" width="1200" height="2" fill="url(#temper)" opacity="0.92"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="259" rx="12" fill="none" stroke="#D7CDBA"/>
+  <text x="64" y="144" font-family="Bitter, Georgia, 'Times New Roman', serif" font-size="88" font-weight="800" letter-spacing="-1.3" fill="#211B14">tanren</text>
+  <text x="66" y="192" font-family="'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="21" fill="#6C6256">// ten years at the bench</text>
+</svg>
