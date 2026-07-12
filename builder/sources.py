@@ -19,8 +19,8 @@ def missing_credentials() -> list[str]:
 
 
 def top_tracks() -> list[dict]:
-    token = spotify_token()
-    data = get_json(
+    token = _spotify_token()
+    data = _get_json(
         "https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=10",
         headers={"Authorization": f"Bearer {token}"},
     )
@@ -40,14 +40,14 @@ def top_tracks() -> list[dict]:
 
 def deezer_genres(title: str, artist: str) -> list[str]:
     query = urllib.parse.quote(f'artist:"{artist}" track:"{title}"')
-    hits = get_json(f"https://api.deezer.com/search?q={query}&limit=5").get("data", [])
+    hits = _get_json(f"https://api.deezer.com/search?q={query}&limit=5").get("data", [])
     for hit in hits:
         if hit["artist"]["name"].casefold() != artist.casefold() or hit["title"].casefold() != title.casefold():
             continue
-        album = get_json(f"https://api.deezer.com/album/{hit['album']['id']}")
+        album = _get_json(f"https://api.deezer.com/album/{hit['album']['id']}")
         names = [genre["name"] for genre in album.get("genres", {}).get("data", [])]
         if names:
-            return normalize(names)
+            return _normalize(names)
     return []
 
 
@@ -56,7 +56,7 @@ def youtube_link(title: str, artist: str) -> str | None:
     if not key:
         return None
     query = urllib.parse.quote(f"{artist} {title}")
-    data = get_json(
+    data = _get_json(
         f"https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=1&q={query}&key={key}"
     )
     items = data.get("items", [])
@@ -65,7 +65,7 @@ def youtube_link(title: str, artist: str) -> str | None:
     return f"https://www.youtube.com/watch?v={items[0]['id']['videoId']}"
 
 
-def normalize(raw: list[str]) -> list[str]:
+def _normalize(raw: list[str]) -> list[str]:
     genres = []
     for value in raw:
         for part in value.split("/"):
@@ -75,14 +75,14 @@ def normalize(raw: list[str]) -> list[str]:
     return genres[:MAX_GENRES]
 
 
-def spotify_token() -> str:
+def _spotify_token() -> str:
     basic = base64.b64encode(
         f"{os.environ['SPOTIFY_CLIENT_ID']}:{os.environ['SPOTIFY_CLIENT_SECRET']}".encode()
     ).decode()
     body = urllib.parse.urlencode(
         {"grant_type": "refresh_token", "refresh_token": os.environ["SPOTIFY_REFRESH_TOKEN"]}
     ).encode()
-    data = get_json(
+    data = _get_json(
         "https://accounts.spotify.com/api/token",
         headers={"Authorization": f"Basic {basic}"},
         body=body,
@@ -90,7 +90,7 @@ def spotify_token() -> str:
     return data["access_token"]
 
 
-def get_json(url: str, *, headers: dict[str, str] | None = None, body: bytes | None = None) -> dict:
+def _get_json(url: str, *, headers: dict[str, str] | None = None, body: bytes | None = None) -> dict:
     attempt = 0
     while True:
         try:

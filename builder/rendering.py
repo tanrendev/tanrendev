@@ -39,21 +39,21 @@ CHIP_FONT = "'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, m
 
 def render_primary(*, track: dict, palette: dict[str, str], template_text: str) -> str:
     values = palette | {
-        "title": escape(s=truncate_to_width(text=track["title"], max_width=PRIMARY_TITLE_EM)),
+        "title": escape(s=_truncate_to_width(text=track["title"], max_width=PRIMARY_TITLE_EM)),
         "artist": escape(s=track["artist"]),
-        "chips": chips(genres=track.get("genres", [])[:3], palette=palette, x=210.0, y=150.0),
+        "chips": _chips(genres=track.get("genres", [])[:3], palette=palette, x=210.0, y=150.0),
     }
     return string.Template(template_text).substitute(values)
 
 
 def render_row(*, track: dict, rank: int, palette: dict[str, str], template_text: str) -> str:
     genres = track.get("genres", [])[:2]
-    total = sum(chip_width(genre=genre) for genre in genres) + CHIP_GAP * max(len(genres) - 1, 0)
+    total = sum(_chip_width(genre=genre) for genre in genres) + CHIP_GAP * max(len(genres) - 1, 0)
     values = palette | {
-        "title": escape(s=truncate_to_width(text=track["title"], max_width=ROW_TITLE_EM)),
+        "title": escape(s=_truncate_to_width(text=track["title"], max_width=ROW_TITLE_EM)),
         "artist": escape(s=track["artist"]),
         "rank": f"{rank:02d}",
-        "chips": chips(genres=genres, palette=palette, x=ROW_RIGHT_EDGE - total, y=18.0),
+        "chips": _chips(genres=genres, palette=palette, x=ROW_RIGHT_EDGE - total, y=18.0),
     }
     return string.Template(template_text).substitute(values)
 
@@ -63,7 +63,7 @@ def music_block(*, tracks: list[dict]) -> str:
     pieces += [(f"music-row-{position}", track, "") for position, track in enumerate(tracks[1:], start=1)]
     lines = []
     for stem, track, prefix in pieces:
-        title = truncate_to_width(text=track["title"], max_width=ROW_TITLE_EM)
+        title = _truncate_to_width(text=track["title"], max_width=ROW_TITLE_EM)
         alt = escape(s=f"{prefix}{title} by {track['artist']}", quote=True)
         link = escape(s=track["link"], quote=True)
         lines.append(
@@ -91,10 +91,10 @@ def splice(*, document: str, marker: str, block: str) -> str:
     return f"{head}{start}\n{block}\n{end}{tail}"
 
 
-def chips(*, genres: list[str], palette: dict[str, str], x: float, y: float) -> str:
+def _chips(*, genres: list[str], palette: dict[str, str], x: float, y: float) -> str:
     fragments = []
     for genre in genres:
-        width = chip_width(genre=genre)
+        width = _chip_width(genre=genre)
         text_x = x + width / 2
         fragments.append(
             f'<g><rect x="{x:g}" y="{y:g}" width="{width:g}" height="{CHIP_H:g}" rx="5"'
@@ -106,11 +106,11 @@ def chips(*, genres: list[str], palette: dict[str, str], x: float, y: float) -> 
     return "".join(fragments)
 
 
-def chip_width(*, genre: str) -> float:
+def _chip_width(*, genre: str) -> float:
     return len(genre) * CHIP_CHAR_W + 2 * CHIP_PAD
 
 
-def truncate_to_width(*, text: str, max_width: float) -> str:
+def _truncate_to_width(*, text: str, max_width: float) -> str:
     used = 0.0
     kept = []
     for character in text:
