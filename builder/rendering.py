@@ -39,8 +39,8 @@ CHIP_FONT = "'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, m
 
 def render_primary(*, track: dict, palette: dict[str, str], template_text: str) -> str:
     values = palette | {
-        "title": escape(s=_truncate_to_width(text=track["title"], max_width=PRIMARY_TITLE_EM)),
-        "artist": escape(s=track["artist"]),
+        "title": escape(_truncate_to_width(text=track["title"], max_width=PRIMARY_TITLE_EM)),
+        "artist": escape(track["artist"]),
         "chips": _chips(genres=track.get("genres", [])[:3], palette=palette, x=210.0, y=150.0),
     }
     return string.Template(template_text).substitute(values)
@@ -50,8 +50,8 @@ def render_row(*, track: dict, rank: int, palette: dict[str, str], template_text
     genres = track.get("genres", [])[:2]
     total = sum(_chip_width(genre=genre) for genre in genres) + CHIP_GAP * max(len(genres) - 1, 0)
     values = palette | {
-        "title": escape(s=_truncate_to_width(text=track["title"], max_width=ROW_TITLE_EM)),
-        "artist": escape(s=track["artist"]),
+        "title": escape(_truncate_to_width(text=track["title"], max_width=ROW_TITLE_EM)),
+        "artist": escape(track["artist"]),
         "rank": f"{rank:02d}",
         "chips": _chips(genres=genres, palette=palette, x=ROW_RIGHT_EDGE - total, y=18.0),
     }
@@ -60,14 +60,14 @@ def render_row(*, track: dict, rank: int, palette: dict[str, str], template_text
 
 def render_stack(*, items: list[str], palette: dict[str, str], template_text: str) -> str:
     values = palette | {
-        "label": escape(s=" · ".join(items)),
+        "label": escape(" · ".join(items)),
         "chips": _chips(genres=items, palette=palette, x=0.5, y=1.5),
     }
     return string.Template(template_text).substitute(values)
 
 
 def stack_block(*, items: list[str]) -> str:
-    alt = escape(s=" · ".join(items), quote=True)
+    alt = escape(" · ".join(items), quote=True)
     return (
         '<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">'
         f'<img src="assets/stack-light.svg" alt="{alt}" width="100%"></picture>'
@@ -80,8 +80,8 @@ def music_block(*, tracks: list[dict]) -> str:
     lines = []
     for stem, track, prefix in pieces:
         title = _truncate_to_width(text=track["title"], max_width=ROW_TITLE_EM)
-        alt = escape(s=f"{prefix}{title} by {track['artist']}", quote=True)
-        link = escape(s=track["link"], quote=True)
+        alt = escape(f"{prefix}{title} by {track['artist']}", quote=True)
+        link = escape(track["link"], quote=True)
         lines.append(
             f'<a href="{link}"><picture>'
             f'<source media="(prefers-color-scheme: dark)" srcset="assets/{stem}-dark.svg">'
@@ -116,7 +116,7 @@ def _chips(*, genres: list[str], palette: dict[str, str], x: float, y: float) ->
             f'<g><rect x="{x:g}" y="{y:g}" width="{width:g}" height="{CHIP_H:g}" rx="5"'
             f' fill="none" stroke="{palette["line"]}"/>'
             f'<text x="{text_x:g}" y="{y + 14:g}" font-family="{CHIP_FONT}" font-size="11"'
-            f' text-anchor="middle" fill="{palette["muted"]}">{escape(s=genre)}</text></g>'
+            f' text-anchor="middle" fill="{palette["muted"]}">{escape(genre)}</text></g>'
         )
         x += width + CHIP_GAP
     return "".join(fragments)

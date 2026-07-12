@@ -20,9 +20,9 @@ def main() -> int:
 
 
 def render() -> int:
-    music = json.loads(s=Path("music.json").read_text(encoding="utf-8"))
+    music = json.loads(Path("music.json").read_text(encoding="utf-8"))
     tracks = music["tracks"]
-    projects = json.loads(s=Path("projects.json").read_text(encoding="utf-8"))["projects"]
+    projects = json.loads(Path("projects.json").read_text(encoding="utf-8"))["projects"]
     primary_template = Path("templates/music-primary.svg").read_text(encoding="utf-8")
     row_template = Path("templates/music-row.svg").read_text(encoding="utf-8")
     stack_template = Path("templates/stack.svg").read_text(encoding="utf-8")
@@ -30,7 +30,7 @@ def render() -> int:
     for theme, palette in (("light", rendering.LIGHT), ("dark", rendering.DARK)):
         svg = rendering.render_primary(track=tracks[0], palette=palette, template_text=primary_template)
         write_if_changed(Path("assets") / f"music-primary-{theme}.svg", svg)
-        for rank, track in enumerate(iterable=tracks[1:], start=2):
+        for rank, track in enumerate(tracks[1:], start=2):
             svg = rendering.render_row(track=track, rank=rank, palette=palette, template_text=row_template)
             write_if_changed(Path("assets") / f"music-row-{rank - 1}-{theme}.svg", svg)
         svg = rendering.render_stack(items=STACK, palette=palette, template_text=stack_template)
@@ -51,7 +51,7 @@ def fetch() -> int:
         return 1
 
     path = Path("music.json")
-    current = {track["spotify_id"]: track for track in json.loads(s=path.read_text(encoding="utf-8"))["tracks"]}
+    current = {track["spotify_id"]: track for track in json.loads(path.read_text(encoding="utf-8"))["tracks"]}
     try:
         fresh = sources.top_tracks()
     except urllib.error.URLError as error:
@@ -93,7 +93,7 @@ def fetch() -> int:
 def write_if_changed(path: Path, content: str) -> bool:
     if path.exists() and path.read_text(encoding="utf-8") == content:
         return False
-    path.write_text(data=content, encoding="utf-8")
+    path.write_text(content, encoding="utf-8")
     return True
 
 
