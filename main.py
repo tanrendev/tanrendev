@@ -1,4 +1,3 @@
-import argparse
 import json
 import sys
 import urllib.error
@@ -7,21 +6,15 @@ from pathlib import Path
 from builder import rendering, sources
 
 
-def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(prog="tanrendev")
-    subcommands = parser.add_subparsers(dest="command")
-    subcommands.add_parser(name="render", help="generate music SVGs and README sections from local data")
-    subcommands.add_parser(name="fetch", help="refresh music.json from Spotify top tracks and Deezer genres")
-
-    args = parser.parse_args(args=argv)
-    match args.command:
-        case "render":
+def main() -> int:
+    match sys.argv[1:]:
+        case ["render"]:
             return render()
-        case "fetch":
+        case ["fetch"]:
             return fetch()
         case _:
-            parser.print_help()
-            return 0
+            print("usage: main.py {render,fetch}", file=sys.stderr)
+            return 1
 
 
 def render() -> int:
