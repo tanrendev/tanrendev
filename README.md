@@ -22,7 +22,9 @@ Backend systems · Python · application security
 
 #### `// stack`
 
-Python · Django · FastAPI · PostgreSQL · Redis · Docker · AWS · Linux
+<!-- stack:start -->
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg"><img src="assets/stack-light.svg" alt="Python · Django · FastAPI · PostgreSQL · Redis · Docker · AWS · Linux" width="100%"></picture>
+<!-- stack:end -->
 
 #### `// now spinning`
 

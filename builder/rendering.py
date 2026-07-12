@@ -58,6 +58,22 @@ def render_row(*, track: dict, rank: int, palette: dict[str, str], template_text
     return string.Template(template_text).substitute(values)
 
 
+def render_stack(*, items: list[str], palette: dict[str, str], template_text: str) -> str:
+    values = palette | {
+        "label": escape(s=" · ".join(items)),
+        "chips": _chips(genres=items, palette=palette, x=0.5, y=1.5),
+    }
+    return string.Template(template_text).substitute(values)
+
+
+def stack_block(*, items: list[str]) -> str:
+    alt = escape(s=" · ".join(items), quote=True)
+    return (
+        '<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">'
+        f'<img src="assets/stack-light.svg" alt="{alt}" width="100%"></picture>'
+    )
+
+
 def music_block(*, tracks: list[dict]) -> str:
     pieces = [("music-primary", tracks[0], "Now spinning: ")]
     pieces += [(f"music-row-{position}", track, "") for position, track in enumerate(tracks[1:], start=1)]
