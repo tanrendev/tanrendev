@@ -56,8 +56,7 @@ def fetch_projects() -> None:
         print(f"fetch: github request failed: {error}", file=sys.stderr)
         return
     text = json.dumps({"projects": projects}, ensure_ascii=False, indent=2) + "\n"
-    if write_if_changed(path=Path("projects.json"), content=text):
-        print("fetch: projects.json updated")
+    write_if_changed(path=Path("projects.json"), content=text)
 
 
 def fetch_music() -> int:
@@ -99,18 +98,14 @@ def fetch_music() -> int:
         )
 
     text = json.dumps({"tracks": tracks}, ensure_ascii=False, indent=2) + "\n"
-    if write_if_changed(path=path, content=text):
-        print("fetch: music.json updated")
-    else:
-        print("fetch: no change")
+    write_if_changed(path=path, content=text)
     return 0
 
 
-def write_if_changed(*, path: Path, content: str) -> bool:
+def write_if_changed(*, path: Path, content: str) -> None:
     if path.exists() and path.read_text(encoding="utf-8") == content:
-        return False
+        return
     path.write_text(content, encoding="utf-8")
-    return True
 
 
 if __name__ == "__main__":
