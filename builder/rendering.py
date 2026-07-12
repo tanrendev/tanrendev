@@ -26,6 +26,8 @@ DARK = {
     "sheen_opacity": "0.08",
 }
 
+THEMES = (("light", LIGHT), ("dark", DARK))
+
 PRIMARY_TITLE_EM = 19.0
 ROW_TITLE_EM = 24.0
 

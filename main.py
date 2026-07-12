@@ -27,7 +27,7 @@ def render() -> int:
     row_template = Path("templates/music-row.svg").read_text(encoding="utf-8")
     stack_template = Path("templates/stack.svg").read_text(encoding="utf-8")
 
-    for theme, palette in (("light", rendering.LIGHT), ("dark", rendering.DARK)):
+    for theme, palette in rendering.THEMES:
         svg = rendering.render_primary(track=tracks[0], palette=palette, template_text=primary_template)
         write_if_changed(path=Path("assets") / f"music-primary-{theme}.svg", content=svg)
         for rank, track in enumerate(tracks[1:], start=2):
