@@ -52,8 +52,8 @@ def fetch() -> int:
 def fetch_projects() -> None:
     try:
         projects = sources.github_projects()
-    except urllib.error.URLError as error:
-        print(f"fetch: github request failed: {error}", file=sys.stderr)
+    except Exception as error:  # noqa: BLE001
+        print(f"fetch: github fetch failed: {error!r}", file=sys.stderr)
         return
     text = json.dumps({"projects": projects}, ensure_ascii=False, indent=2) + "\n"
     write_if_changed(path=Path("projects.json"), content=text)
