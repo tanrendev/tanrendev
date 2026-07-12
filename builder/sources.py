@@ -20,7 +20,7 @@ def missing_credentials() -> list[str]:
 
 def top_tracks() -> list[dict]:
     token = _spotify_token()
-    data = _get_json(
+    data = _request_json(
         url="https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=10",
         headers={"Authorization": f"Bearer {token}"},
     )
@@ -40,11 +40,11 @@ def top_tracks() -> list[dict]:
 
 def deezer_genres(*, title: str, artist: str) -> list[str]:
     query = urllib.parse.quote(f'artist:"{artist}" track:"{title}"')
-    hits = _get_json(url=f"https://api.deezer.com/search?q={query}&limit=5").get("data", [])
+    hits = _request_json(url=f"https://api.deezer.com/search?q={query}&limit=5").get("data", [])
     for hit in hits:
         if hit["artist"]["name"].casefold() != artist.casefold() or hit["title"].casefold() != title.casefold():
             continue
-        album = _get_json(url=f"https://api.deezer.com/album/{hit['album']['id']}")
+        album = _request_json(url=f"https://api.deezer.com/album/{hit['album']['id']}")
         names = [genre["name"] for genre in album.get("genres", {}).get("data", [])]
         if names:
             return _normalize(raw=names)
@@ -56,7 +56,7 @@ def youtube_link(*, title: str, artist: str) -> str | None:
     if not key:
         return None
     query = urllib.parse.quote(f"{artist} {title}")
-    data = _get_json(
+    data = _request_json(
         url=f"https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=1&q={query}&key={key}"
     )
     items = data.get("items", [])
@@ -82,7 +82,7 @@ def _spotify_token() -> str:
     body = urllib.parse.urlencode(
         {"grant_type": "refresh_token", "refresh_token": os.environ["SPOTIFY_REFRESH_TOKEN"]}
     ).encode()
-    data = _get_json(
+    data = _request_json(
         url="https://accounts.spotify.com/api/token",
         headers={"Authorization": f"Basic {basic}"},
         body=body,
@@ -90,7 +90,7 @@ def _spotify_token() -> str:
     return data["access_token"]
 
 
-def _get_json(*, url: str, headers: dict[str, str] | None = None, body: bytes | None = None) -> dict:
+def _request_json(*, url: str, headers: dict[str, str] | None = None, body: bytes | None = None) -> dict:
     attempt = 0
     while True:
         try:
