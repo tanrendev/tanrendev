@@ -4,15 +4,13 @@
       "name": "jig",
       "url": "https://github.com/tanrendev/jig",
       "state": "active",
-      "description": "Personal Claude Code toolkit.",
-      "order": 1
+      "description": "Personal Claude Code toolkit."
     },
     {
       "name": "tanren.dev",
       "url": "https://tanren.dev",
       "state": "active",
-      "description": "Personal site. Writing, and a music curation feed.",
-      "order": 2
+      "description": "Personal site. Writing, and a music curation feed."
     }
   ]
 }
