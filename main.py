@@ -29,18 +29,18 @@ def render() -> int:
 
     for theme, palette in (("light", rendering.LIGHT), ("dark", rendering.DARK)):
         svg = rendering.render_primary(track=tracks[0], palette=palette, template_text=primary_template)
-        write_if_changed(Path("assets") / f"music-primary-{theme}.svg", svg)
+        write_if_changed(path=Path("assets") / f"music-primary-{theme}.svg", content=svg)
         for rank, track in enumerate(tracks[1:], start=2):
             svg = rendering.render_row(track=track, rank=rank, palette=palette, template_text=row_template)
-            write_if_changed(Path("assets") / f"music-row-{rank - 1}-{theme}.svg", svg)
+            write_if_changed(path=Path("assets") / f"music-row-{rank - 1}-{theme}.svg", content=svg)
         svg = rendering.render_stack(items=STACK, palette=palette, template_text=stack_template)
-        write_if_changed(Path("assets") / f"stack-{theme}.svg", svg)
+        write_if_changed(path=Path("assets") / f"stack-{theme}.svg", content=svg)
     readme_path = Path("README.md")
     readme = readme_path.read_text(encoding="utf-8")
     readme = rendering.splice(document=readme, marker="music", block=rendering.music_block(tracks=tracks))
     readme = rendering.splice(document=readme, marker="projects", block=rendering.projects_block(projects=projects))
     readme = rendering.splice(document=readme, marker="stack", block=rendering.stack_block(items=STACK))
-    write_if_changed(readme_path, readme)
+    write_if_changed(path=readme_path, content=readme)
     return 0
 
 
@@ -65,11 +65,11 @@ def fetch() -> int:
             tracks.append(known)
             continue
         try:
-            genres = sources.deezer_genres(entry["title"], entry["artist"])
+            genres = sources.deezer_genres(title=entry["title"], artist=entry["artist"])
         except urllib.error.URLError:
             genres = []
         try:
-            link = sources.youtube_link(entry["title"], entry["artist"])
+            link = sources.youtube_link(title=entry["title"], artist=entry["artist"])
         except urllib.error.URLError:
             link = None
         tracks.append(
@@ -83,14 +83,14 @@ def fetch() -> int:
         )
 
     text = json.dumps({"tracks": tracks}, ensure_ascii=False, indent=2) + "\n"
-    if write_if_changed(path, text):
+    if write_if_changed(path=path, content=text):
         print("fetch: music.json updated")
     else:
         print("fetch: no change")
     return 0
 
 
-def write_if_changed(path: Path, content: str) -> bool:
+def write_if_changed(*, path: Path, content: str) -> bool:
     if path.exists() and path.read_text(encoding="utf-8") == content:
         return False
     path.write_text(content, encoding="utf-8")
