@@ -92,7 +92,12 @@ def music_block(*, tracks: list[dict]) -> str:
 
 
 def projects_block(*, projects: list[dict]) -> str:
-    lines = [f"- [{project['name']}]({project['url']}): {project['description']}" for project in projects]
+    lines = []
+    for project in projects:
+        entry = f"- [{project['name']}]({project['url']})"
+        if project["description"]:
+            entry += f": {project['description']}"
+        lines.append(entry)
     return "\n".join(lines)
 
 

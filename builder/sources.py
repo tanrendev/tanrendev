@@ -5,9 +5,14 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from datetime import UTC, datetime, timedelta
+from typing import Any
 
 TIMEOUT = 15
 SPOTIFY_VARS = ("SPOTIFY_CLIENT_ID", "SPOTIFY_CLIENT_SECRET", "SPOTIFY_REFRESH_TOKEN")
+GITHUB_USER = "tanrendev"
+PROJECT_LIMIT = 5
+PROJECT_MAX_AGE = timedelta(days=90)
 CARD_TRACKS = 3
 MAX_GENRES = 3
 RETRYABLE_STATUS = {429, 500, 502, 503, 504}
@@ -65,6 +70,39 @@ def youtube_link(*, title: str, artist: str) -> str | None:
     return f"https://www.youtube.com/watch?v={items[0]['id']['videoId']}"
 
 
+def github_projects() -> list[dict]:
+    headers = {}
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    repos = _request_json(
+        url=f"https://api.github.com/users/{GITHUB_USER}/repos?type=owner&sort=pushed&per_page=100",
+        headers=headers,
+    )
+    cutoff = datetime.now(tz=UTC) - PROJECT_MAX_AGE
+    fresh = []
+
+    for repo in repos:
+        if repo["fork"] or repo["name"] == GITHUB_USER:
+            continue
+        if datetime.fromisoformat(repo["pushed_at"]) < cutoff:
+            continue
+        fresh.append(repo)
+        if len(fresh) == PROJECT_LIMIT:
+            break
+
+    fresh.sort(key=lambda repo: repo["name"].casefold())
+    return [
+        {
+            "name": repo["name"],
+            "url": repo["html_url"],
+            "description": repo["description"] or "",
+            "language": repo["language"] or "",
+        }
+        for repo in fresh
+    ]
+
+
 def _normalize(*, raw: list[str]) -> list[str]:
     genres = []
     for value in raw:
@@ -90,7 +128,7 @@ def _spotify_token() -> str:
     return data["access_token"]
 
 
-def _request_json(*, url: str, headers: dict[str, str] | None = None, body: bytes | None = None) -> dict:
+def _request_json(*, url: str, headers: dict[str, str] | None = None, body: bytes | None = None) -> Any:  # noqa: ANN401
     attempt = 0
     while True:
         try:

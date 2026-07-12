@@ -45,6 +45,22 @@ def render() -> int:
 
 
 def fetch() -> int:
+    fetch_projects()
+    return fetch_music()
+
+
+def fetch_projects() -> None:
+    try:
+        projects = sources.github_projects()
+    except urllib.error.URLError as error:
+        print(f"fetch: github request failed: {error}", file=sys.stderr)
+        return
+    text = json.dumps({"projects": projects}, ensure_ascii=False, indent=2) + "\n"
+    if write_if_changed(path=Path("projects.json"), content=text):
+        print("fetch: projects.json updated")
+
+
+def fetch_music() -> int:
     missing = sources.missing_credentials()
     if missing:
         print("fetch: missing environment variables:", ", ".join(missing), file=sys.stderr)

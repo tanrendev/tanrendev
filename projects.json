@@ -1,14 +1,3 @@
 {
-  "projects": [
-    {
-      "name": "jig",
-      "url": "https://github.com/tanrendev/jig",
-      "description": "Personal Claude Code toolkit."
-    },
-    {
-      "name": "tanren.dev",
-      "url": "https://tanren.dev",
-      "description": "Personal site. Writing, and a music curation feed."
-    }
-  ]
+  "projects": []
 }

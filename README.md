@@ -16,8 +16,7 @@ Backend systems · Python · application security
 #### `// projects`
 
 <!-- projects:start -->
-- [jig](https://github.com/tanrendev/jig): Personal Claude Code toolkit.
-- [tanren.dev](https://tanren.dev): Personal site. Writing, and a music curation feed.
+
 <!-- projects:end -->
 
 #### `// stack`
