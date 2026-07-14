@@ -16,7 +16,7 @@ Backend systems · Python · application security
 #### `// projects`
 
 <!-- projects:start -->
-- [jig](https://github.com/tanrendev/jig)
+- [jig](https://github.com/tanrendev/jig): My Claude Code toolkit. Currently guard: hooks that scan agent-driven package installs before they run.
 <!-- projects:end -->
 
 #### `// stack`
