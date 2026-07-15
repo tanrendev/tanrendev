@@ -5,6 +5,12 @@
       "url": "https://github.com/tanrendev/jig",
       "description": "My Claude Code toolkit. Currently guard: hooks that scan agent-driven package installs before they run.",
       "language": "Python"
+    },
+    {
+      "name": "paperboy",
+      "url": "https://github.com/tanrendev/paperboy",
+      "description": "A paperboy for job boards",
+      "language": ""
     }
   ]
 }
