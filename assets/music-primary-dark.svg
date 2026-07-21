@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 200" width="830" height="200" role="img" aria-labelledby="t d">
-  <title id="t">Now spinning: To The Sky by [IVY]</title>
+  <title id="t">Now spinning: Xx by Mounika.</title>
   <desc id="d">Turntable card: the most played track of the last four weeks.</desc>
   <style>@media (prefers-reduced-motion: reduce) { .sheen { display: none; } }</style>
   <rect x="0.5" y="0.5" width="829" height="199" rx="12" fill="#141B23" stroke="#26313C"/>
@@ -13,7 +13,7 @@
   <circle cx="105" cy="100" r="27" fill="#E8703A"/>
   <circle cx="105" cy="100" r="3.5" fill="#141B23"/>
   <text x="210" y="64" font-family="'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" letter-spacing="2.4" fill="#739ABF">NOW SPINNING</text>
-  <text x="210" y="106" font-family="Bitter, Georgia, 'Times New Roman', serif" font-size="30" font-weight="800" fill="#DFE6EE">To The Sky</text>
-  <text x="210" y="134" font-family="'IBM Plex Sans', -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#8A98A8">[IVY]</text>
-  <g><rect x="210" y="150" width="47" height="20" rx="5" fill="none" stroke="#26313C"/><text x="233.5" y="164" font-family="'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" text-anchor="middle" fill="#8A98A8">dance</text></g>
+  <text x="210" y="106" font-family="Bitter, Georgia, 'Times New Roman', serif" font-size="30" font-weight="800" fill="#DFE6EE">Xx</text>
+  <text x="210" y="134" font-family="'IBM Plex Sans', -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#8A98A8">Mounika.</text>
+  <g><rect x="210" y="150" width="60.2" height="20" rx="5" fill="none" stroke="#26313C"/><text x="240.1" y="164" font-family="'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" text-anchor="middle" fill="#8A98A8">electro</text></g><g><rect x="278.2" y="150" width="73.4" height="20" rx="5" fill="none" stroke="#26313C"/><text x="314.9" y="164" font-family="'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" text-anchor="middle" fill="#8A98A8">chill out</text></g><g><rect x="359.6" y="150" width="66.8" height="20" rx="5" fill="none" stroke="#26313C"/><text x="393" y="164" font-family="'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" text-anchor="middle" fill="#8A98A8">trip-hop</text></g>
 </svg>

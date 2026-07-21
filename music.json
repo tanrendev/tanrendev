@@ -1,15 +1,6 @@
 {
   "tracks": [
     {
-      "title": "To The Sky",
-      "artist": "[IVY]",
-      "link": "https://www.youtube.com/watch?v=XC_yM6H2ukU",
-      "spotify_id": "2ta1uHvZMY7yG8xms7VTr3",
-      "genres": [
-        "dance"
-      ]
-    },
-    {
       "title": "Xx",
       "artist": "Mounika.",
       "link": "https://www.youtube.com/watch?v=GkmSpbGO0eM",
@@ -18,6 +9,15 @@
         "electro",
         "chill out",
         "trip-hop"
+      ]
+    },
+    {
+      "title": "To The Sky",
+      "artist": "[IVY]",
+      "link": "https://www.youtube.com/watch?v=XC_yM6H2ukU",
+      "spotify_id": "2ta1uHvZMY7yG8xms7VTr3",
+      "genres": [
+        "dance"
       ]
     },
     {
