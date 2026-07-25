@@ -1,17 +1,6 @@
 {
   "tracks": [
     {
-      "title": "Xx",
-      "artist": "Mounika.",
-      "link": "https://www.youtube.com/watch?v=GkmSpbGO0eM",
-      "spotify_id": "7zgUY8lEdqAOOIdHPp6fQo",
-      "genres": [
-        "electro",
-        "chill out",
-        "trip-hop"
-      ]
-    },
-    {
       "title": "Everything In Its Right Place",
       "artist": "Gigamesh",
       "link": "https://www.youtube.com/watch?v=atscx8HGu9o",
@@ -20,6 +9,17 @@
         "electro",
         "techno",
         "house"
+      ]
+    },
+    {
+      "title": "Xx",
+      "artist": "Mounika.",
+      "link": "https://www.youtube.com/watch?v=GkmSpbGO0eM",
+      "spotify_id": "7zgUY8lEdqAOOIdHPp6fQo",
+      "genres": [
+        "electro",
+        "chill out",
+        "trip-hop"
       ]
     },
     {
