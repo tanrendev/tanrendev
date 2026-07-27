@@ -31,7 +31,7 @@ Backend systems · Python · application security
 <!-- music:start -->
 <a href="https://www.youtube.com/watch?v=kUakaELXA54"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-primary-dark.svg"><img src="assets/music-primary-light.svg" alt="Now spinning: ೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋ… by Fine-Sir-1584660650" width="100%"></picture></a>
 <a href="https://open.spotify.com/track/3olxSQBMQBlwXPd3Mhbtmi"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-1-dark.svg"><img src="assets/music-row-1-light.svg" alt="Voyeurisme by Bolivard" width="100%"></picture></a>
-<a href="https://www.youtube.com/watch?v=atscx8HGu9o"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-2-dark.svg"><img src="assets/music-row-2-light.svg" alt="Everything In Its Right Place by Gigamesh" width="100%"></picture></a>
+<a href="https://www.youtube.com/watch?v=p4IvUlS75kU"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-2-dark.svg"><img src="assets/music-row-2-light.svg" alt="Korienzé by Diskay" width="100%"></picture></a>
 <!-- music:end -->
 
 #### `// reach`
