@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "name": "dotfiles",
+      "url": "https://github.com/tanrendev/dotfiles",
+      "description": "",
+      "language": ""
+    },
+    {
       "name": "jig",
       "url": "https://github.com/tanrendev/jig",
       "description": "My Claude Code toolkit. Currently guard: hooks that scan agent-driven package installs before they run.",
