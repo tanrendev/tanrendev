@@ -16,7 +16,6 @@ Backend systems · Python · application security
 #### `// projects`
 
 <!-- projects:start -->
-- [dotfiles](https://github.com/tanrendev/dotfiles)
 - [jig](https://github.com/tanrendev/jig): My Claude Code toolkit. Currently guard: hooks that scan agent-driven package installs before they run.
 - [paperboy](https://github.com/tanrendev/paperboy): A paperboy for job boards
 <!-- projects:end -->
@@ -30,9 +29,9 @@ Backend systems · Python · application security
 #### `// now spinning`
 
 <!-- music:start -->
-<a href="https://www.youtube.com/watch?v=kUakaELXA54"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-primary-dark.svg"><img src="assets/music-primary-light.svg" alt="Now spinning: ೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋ… by Fine-Sir-1584660650" width="100%"></picture></a>
-<a href="https://open.spotify.com/track/3olxSQBMQBlwXPd3Mhbtmi"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-1-dark.svg"><img src="assets/music-row-1-light.svg" alt="Voyeurisme by Bolivard" width="100%"></picture></a>
-<a href="https://www.youtube.com/watch?v=p4IvUlS75kU"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-2-dark.svg"><img src="assets/music-row-2-light.svg" alt="Korienzé by Diskay" width="100%"></picture></a>
+<a href="https://open.spotify.com/track/3olxSQBMQBlwXPd3Mhbtmi"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-primary-dark.svg"><img src="assets/music-primary-light.svg" alt="Now spinning: Voyeurisme by Bolivard" width="100%"></picture></a>
+<a href="https://www.youtube.com/watch?v=p4IvUlS75kU"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-1-dark.svg"><img src="assets/music-row-1-light.svg" alt="Korienzé by Diskay" width="100%"></picture></a>
+<a href="https://www.youtube.com/watch?v=6IH9cXGXeH0"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-2-dark.svg"><img src="assets/music-row-2-light.svg" alt="Starry Night by Les Gordon" width="100%"></picture></a>
 <!-- music:end -->
 
 #### `// reach`

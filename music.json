@@ -1,13 +1,6 @@
 {
   "tracks": [
     {
-      "title": "ೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋೋ",
-      "artist": "Fine-Sir-1584660650",
-      "link": "https://www.youtube.com/watch?v=kUakaELXA54",
-      "spotify_id": "7bUgkEuZV7kppzH2bDnQUF",
-      "genres": []
-    },
-    {
       "title": "Voyeurisme",
       "artist": "Bolivard",
       "link": "https://open.spotify.com/track/3olxSQBMQBlwXPd3Mhbtmi",
@@ -21,6 +14,16 @@
       "spotify_id": "5vBHUYljaHEVUKI3blpb8i",
       "genres": [
         "electro"
+      ]
+    },
+    {
+      "title": "Starry Night",
+      "artist": "Les Gordon",
+      "link": "https://www.youtube.com/watch?v=6IH9cXGXeH0",
+      "spotify_id": "2wq6IxCJn9U4RVTstf9xzl",
+      "genres": [
+        "electro",
+        "dance"
       ]
     }
   ]
