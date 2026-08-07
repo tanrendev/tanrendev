@@ -8,22 +8,23 @@
       "genres": []
     },
     {
-      "title": "Korienzé",
-      "artist": "Diskay",
-      "link": "https://www.youtube.com/watch?v=p4IvUlS75kU",
-      "spotify_id": "5vBHUYljaHEVUKI3blpb8i",
+      "title": "Lust and Love",
+      "artist": "Nasser",
+      "link": "https://www.youtube.com/watch?v=_mN91ZsAboU",
+      "spotify_id": "4iq6Aehe8zW6klT5yuYmSG",
       "genres": [
         "electro"
       ]
     },
     {
-      "title": "Starry Night",
-      "artist": "Les Gordon",
-      "link": "https://www.youtube.com/watch?v=6IH9cXGXeH0",
-      "spotify_id": "2wq6IxCJn9U4RVTstf9xzl",
+      "title": "Everything In Its Right Place",
+      "artist": "Gigamesh",
+      "link": "https://www.youtube.com/watch?v=atscx8HGu9o",
+      "spotify_id": "7kI56mN9GoOaxJPWAH4q8x",
       "genres": [
         "electro",
-        "dance"
+        "techno",
+        "house"
       ]
     }
   ]
