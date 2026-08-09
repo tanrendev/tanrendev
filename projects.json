@@ -4,7 +4,7 @@
       "name": "dotfiles",
       "url": "https://github.com/tanrendev/dotfiles",
       "description": "",
-      "language": ""
+      "language": "Nix"
     },
     {
       "name": "jig",
