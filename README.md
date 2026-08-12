@@ -30,9 +30,9 @@ Backend systems · Python · application security
 #### `// now spinning`
 
 <!-- music:start -->
-<a href="https://open.spotify.com/track/3olxSQBMQBlwXPd3Mhbtmi"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-primary-dark.svg"><img src="assets/music-primary-light.svg" alt="Now spinning: Voyeurisme by Bolivard" width="100%"></picture></a>
-<a href="https://www.youtube.com/watch?v=_mN91ZsAboU"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-1-dark.svg"><img src="assets/music-row-1-light.svg" alt="Lust and Love by Nasser" width="100%"></picture></a>
-<a href="https://www.youtube.com/watch?v=atscx8HGu9o"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-2-dark.svg"><img src="assets/music-row-2-light.svg" alt="Everything In Its Right Place by Gigamesh" width="100%"></picture></a>
+<a href="https://www.youtube.com/watch?v=_mN91ZsAboU"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-primary-dark.svg"><img src="assets/music-primary-light.svg" alt="Now spinning: Lust and Love by Nasser" width="100%"></picture></a>
+<a href="https://www.youtube.com/watch?v=atscx8HGu9o"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-1-dark.svg"><img src="assets/music-row-1-light.svg" alt="Everything In Its Right Place by Gigamesh" width="100%"></picture></a>
+<a href="https://www.youtube.com/watch?v=Hf3f-NgPVHo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-2-dark.svg"><img src="assets/music-row-2-light.svg" alt="Nostalgia by JAEL." width="100%"></picture></a>
 <!-- music:end -->
 
 #### `// reach`

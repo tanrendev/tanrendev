@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 200" width="830" height="200" role="img" aria-labelledby="t d">
-  <title id="t">Now spinning: Voyeurisme by Bolivard</title>
+  <title id="t">Now spinning: Lust and Love by Nasser</title>
   <desc id="d">Turntable card: the most played track of the last four weeks.</desc>
   <style>@media (prefers-reduced-motion: reduce) { .sheen { display: none; } }</style>
   <rect x="0.5" y="0.5" width="829" height="199" rx="12" fill="#F3EEE5" stroke="#D7CDBA"/>
@@ -13,7 +13,7 @@
   <circle cx="105" cy="100" r="27" fill="#BF451C"/>
   <circle cx="105" cy="100" r="3.5" fill="#F3EEE5"/>
   <text x="210" y="64" font-family="'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" letter-spacing="2.4" fill="#A4380F">NOW SPINNING</text>
-  <text x="210" y="106" font-family="Bitter, Georgia, 'Times New Roman', serif" font-size="30" font-weight="800" fill="#211B14">Voyeurisme</text>
-  <text x="210" y="134" font-family="'IBM Plex Sans', -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#6C6256">Bolivard</text>
-  
+  <text x="210" y="106" font-family="Bitter, Georgia, 'Times New Roman', serif" font-size="30" font-weight="800" fill="#211B14">Lust and Love</text>
+  <text x="210" y="134" font-family="'IBM Plex Sans', -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#6C6256">Nasser</text>
+  <g><rect x="210" y="150" width="60.2" height="20" rx="5" fill="none" stroke="#D7CDBA"/><text x="240.1" y="164" font-family="'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" text-anchor="middle" fill="#6C6256">electro</text></g>
 </svg>

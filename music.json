@@ -1,13 +1,6 @@
 {
   "tracks": [
     {
-      "title": "Voyeurisme",
-      "artist": "Bolivard",
-      "link": "https://open.spotify.com/track/3olxSQBMQBlwXPd3Mhbtmi",
-      "spotify_id": "3olxSQBMQBlwXPd3Mhbtmi",
-      "genres": []
-    },
-    {
       "title": "Lust and Love",
       "artist": "Nasser",
       "link": "https://www.youtube.com/watch?v=_mN91ZsAboU",
@@ -25,6 +18,15 @@
         "electro",
         "techno",
         "house"
+      ]
+    },
+    {
+      "title": "Nostalgia",
+      "artist": "JAEL.",
+      "link": "https://www.youtube.com/watch?v=Hf3f-NgPVHo",
+      "spotify_id": "1OZSQCNKMm6y97SCdEzYpL",
+      "genres": [
+        "electro"
       ]
     }
   ]
