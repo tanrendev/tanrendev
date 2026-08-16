@@ -17,8 +17,10 @@ Backend systems · Python · application security
 
 <!-- projects:start -->
 - [dotfiles](https://github.com/tanrendev/dotfiles)
+- [familiar](https://github.com/tanrendev/familiar)
 - [jig](https://github.com/tanrendev/jig): My Claude Code toolkit. Currently guard: hooks that scan agent-driven package installs before they run.
 - [paperboy](https://github.com/tanrendev/paperboy): A paperboy for job boards
+- [patina](https://github.com/tanrendev/patina): Noctalia plugin that switches wallpaper with light/dark mode
 <!-- projects:end -->
 
 #### `// stack`
@@ -31,8 +33,8 @@ Backend systems · Python · application security
 
 <!-- music:start -->
 <a href="https://www.youtube.com/watch?v=_mN91ZsAboU"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-primary-dark.svg"><img src="assets/music-primary-light.svg" alt="Now spinning: Lust and Love by Nasser" width="100%"></picture></a>
-<a href="https://www.youtube.com/watch?v=atscx8HGu9o"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-1-dark.svg"><img src="assets/music-row-1-light.svg" alt="Everything In Its Right Place by Gigamesh" width="100%"></picture></a>
-<a href="https://www.youtube.com/watch?v=Hf3f-NgPVHo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-2-dark.svg"><img src="assets/music-row-2-light.svg" alt="Nostalgia by JAEL." width="100%"></picture></a>
+<a href="https://www.youtube.com/watch?v=GJQ7pA_mnZo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-1-dark.svg"><img src="assets/music-row-1-light.svg" alt="纵容 by Capper" width="100%"></picture></a>
+<a href="https://www.youtube.com/watch?v=6FEDrU85FLE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-2-dark.svg"><img src="assets/music-row-2-light.svg" alt="Butterfly by Crazy Town" width="100%"></picture></a>
 <!-- music:end -->
 
 #### `// reach`

@@ -7,6 +7,12 @@
       "language": "Nix"
     },
     {
+      "name": "familiar",
+      "url": "https://github.com/tanrendev/familiar",
+      "description": "",
+      "language": "Shell"
+    },
+    {
       "name": "jig",
       "url": "https://github.com/tanrendev/jig",
       "description": "My Claude Code toolkit. Currently guard: hooks that scan agent-driven package installs before they run.",
@@ -17,6 +23,12 @@
       "url": "https://github.com/tanrendev/paperboy",
       "description": "A paperboy for job boards",
       "language": ""
+    },
+    {
+      "name": "patina",
+      "url": "https://github.com/tanrendev/patina",
+      "description": "Noctalia plugin that switches wallpaper with light/dark mode",
+      "language": "Shell"
     }
   ]
 }
