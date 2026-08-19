@@ -3,13 +3,13 @@
     {
       "name": "dotfiles",
       "url": "https://github.com/tanrendev/dotfiles",
-      "description": "",
+      "description": "NixOS flake: Hyprland with Noctalia, home-manager, wallpaper theming",
       "language": "Nix"
     },
     {
       "name": "familiar",
       "url": "https://github.com/tanrendev/familiar",
-      "description": "",
+      "description": "Noctalia plugin with an animated pixel owl in the bar",
       "language": "Luau"
     },
     {
@@ -19,16 +19,16 @@
       "language": "Python"
     },
     {
-      "name": "paperboy",
-      "url": "https://github.com/tanrendev/paperboy",
-      "description": "A paperboy for job boards",
-      "language": ""
+      "name": "noctalia-plugin-template",
+      "url": "https://github.com/tanrendev/noctalia-plugin-template",
+      "description": "Template for a single-plugin Noctalia source",
+      "language": "Luau"
     },
     {
       "name": "patina",
       "url": "https://github.com/tanrendev/patina",
       "description": "Noctalia plugin that switches wallpaper with light/dark mode",
-      "language": "Shell"
+      "language": "Luau"
     }
   ]
 }

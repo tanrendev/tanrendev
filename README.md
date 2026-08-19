@@ -16,10 +16,10 @@ Backend systems · Python · application security
 #### `// projects`
 
 <!-- projects:start -->
-- [dotfiles](https://github.com/tanrendev/dotfiles)
-- [familiar](https://github.com/tanrendev/familiar)
+- [dotfiles](https://github.com/tanrendev/dotfiles): NixOS flake: Hyprland with Noctalia, home-manager, wallpaper theming
+- [familiar](https://github.com/tanrendev/familiar): Noctalia plugin with an animated pixel owl in the bar
 - [jig](https://github.com/tanrendev/jig): My Claude Code toolkit. Currently guard: hooks that scan agent-driven package installs before they run.
-- [paperboy](https://github.com/tanrendev/paperboy): A paperboy for job boards
+- [noctalia-plugin-template](https://github.com/tanrendev/noctalia-plugin-template): Template for a single-plugin Noctalia source
 - [patina](https://github.com/tanrendev/patina): Noctalia plugin that switches wallpaper with light/dark mode
 <!-- projects:end -->
 
