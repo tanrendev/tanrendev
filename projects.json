@@ -13,16 +13,16 @@
       "language": "Luau"
     },
     {
-      "name": "jig",
-      "url": "https://github.com/tanrendev/jig",
-      "description": "My Claude Code toolkit. Currently guard: hooks that scan agent-driven package installs before they run.",
-      "language": "Python"
-    },
-    {
       "name": "noctalia-plugin-template",
       "url": "https://github.com/tanrendev/noctalia-plugin-template",
       "description": "Template for a single-plugin Noctalia source",
       "language": "Luau"
+    },
+    {
+      "name": "paperboy",
+      "url": "https://github.com/tanrendev/paperboy",
+      "description": "A paperboy for job boards",
+      "language": ""
     },
     {
       "name": "patina",
