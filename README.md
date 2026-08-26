@@ -32,9 +32,9 @@ Backend systems · Python · application security
 #### `// now spinning`
 
 <!-- music:start -->
-<a href="https://www.youtube.com/watch?v=_mN91ZsAboU"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-primary-dark.svg"><img src="assets/music-primary-light.svg" alt="Now spinning: Lust and Love by Nasser" width="100%"></picture></a>
-<a href="https://www.youtube.com/watch?v=hDMX3tpNcus"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-1-dark.svg"><img src="assets/music-row-1-light.svg" alt="david lynch by SCHWARZ" width="100%"></picture></a>
-<a href="https://www.youtube.com/watch?v=j7ot5LMONBM"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-2-dark.svg"><img src="assets/music-row-2-light.svg" alt="Jours Heureux by may may?" width="100%"></picture></a>
+<a href="https://www.youtube.com/watch?v=hDMX3tpNcus"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-primary-dark.svg"><img src="assets/music-primary-light.svg" alt="Now spinning: david lynch by SCHWARZ" width="100%"></picture></a>
+<a href="https://www.youtube.com/watch?v=j7ot5LMONBM"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-1-dark.svg"><img src="assets/music-row-1-light.svg" alt="Jours Heureux by may may?" width="100%"></picture></a>
+<a href="https://www.youtube.com/watch?v=6FEDrU85FLE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-2-dark.svg"><img src="assets/music-row-2-light.svg" alt="Butterfly by Crazy Town" width="100%"></picture></a>
 <!-- music:end -->
 
 #### `// reach`

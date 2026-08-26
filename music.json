@@ -1,15 +1,6 @@
 {
   "tracks": [
     {
-      "title": "Lust and Love",
-      "artist": "Nasser",
-      "link": "https://www.youtube.com/watch?v=_mN91ZsAboU",
-      "spotify_id": "4iq6Aehe8zW6klT5yuYmSG",
-      "genres": [
-        "electro"
-      ]
-    },
-    {
       "title": "david lynch",
       "artist": "SCHWARZ",
       "link": "https://www.youtube.com/watch?v=hDMX3tpNcus",
@@ -26,6 +17,15 @@
       "genres": [
         "electro",
         "dance"
+      ]
+    },
+    {
+      "title": "Butterfly",
+      "artist": "Crazy Town",
+      "link": "https://www.youtube.com/watch?v=6FEDrU85FLE",
+      "spotify_id": "6GQ3WTaNHMFlVmN4burGat",
+      "genres": [
+        "rock"
       ]
     }
   ]
