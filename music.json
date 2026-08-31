@@ -10,6 +10,15 @@
       ]
     },
     {
+      "title": "Butterfly",
+      "artist": "Crazy Town",
+      "link": "https://www.youtube.com/watch?v=6FEDrU85FLE",
+      "spotify_id": "6GQ3WTaNHMFlVmN4burGat",
+      "genres": [
+        "rock"
+      ]
+    },
+    {
       "title": "Jours Heureux",
       "artist": "may may?",
       "link": "https://www.youtube.com/watch?v=j7ot5LMONBM",
@@ -17,15 +26,6 @@
       "genres": [
         "electro",
         "dance"
-      ]
-    },
-    {
-      "title": "Butterfly",
-      "artist": "Crazy Town",
-      "link": "https://www.youtube.com/watch?v=6FEDrU85FLE",
-      "spotify_id": "6GQ3WTaNHMFlVmN4burGat",
-      "genres": [
-        "rock"
       ]
     }
   ]

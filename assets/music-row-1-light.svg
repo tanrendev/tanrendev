@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 56" width="830" height="56" role="img" aria-labelledby="t d">
-  <title id="t">Jours Heureux by may may?</title>
+  <title id="t">Butterfly by Crazy Town</title>
   <desc id="d">Ranked 02 among the most played tracks of the last four weeks.</desc>
   <rect x="0.5" y="0.5" width="829" height="55" rx="10" fill="#F3EEE5" stroke="#D7CDBA"/>
   <text x="24" y="35" font-family="'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" fill="#9A9082">02</text>
-  <text x="64" y="35" font-family="'IBM Plex Sans', -apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#211B14">Jours Heureux<tspan font-weight="400" fill="#6C6256"> · may may?</tspan></text>
-  <g><rect x="690.8" y="18" width="60.2" height="20" rx="5" fill="none" stroke="#D7CDBA"/><text x="720.9" y="32" font-family="'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" text-anchor="middle" fill="#6C6256">electro</text></g><g><rect x="759" y="18" width="47" height="20" rx="5" fill="none" stroke="#D7CDBA"/><text x="782.5" y="32" font-family="'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" text-anchor="middle" fill="#6C6256">dance</text></g>
+  <text x="64" y="35" font-family="'IBM Plex Sans', -apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#211B14">Butterfly<tspan font-weight="400" fill="#6C6256"> · Crazy Town</tspan></text>
+  <g><rect x="765.6" y="18" width="40.4" height="20" rx="5" fill="none" stroke="#D7CDBA"/><text x="785.8" y="32" font-family="'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" text-anchor="middle" fill="#6C6256">rock</text></g>
 </svg>
