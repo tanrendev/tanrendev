@@ -10,15 +10,6 @@
       ]
     },
     {
-      "title": "Butterfly",
-      "artist": "Crazy Town",
-      "link": "https://www.youtube.com/watch?v=6FEDrU85FLE",
-      "spotify_id": "6GQ3WTaNHMFlVmN4burGat",
-      "genres": [
-        "rock"
-      ]
-    },
-    {
       "title": "Jours Heureux",
       "artist": "may may?",
       "link": "https://www.youtube.com/watch?v=j7ot5LMONBM",
@@ -26,6 +17,16 @@
       "genres": [
         "electro",
         "dance"
+      ]
+    },
+    {
+      "title": "LE GROOVE D'UNE CHANSON TRISTE",
+      "artist": "Odetto",
+      "link": "https://www.youtube.com/watch?v=SbIa-0ztc7M",
+      "spotify_id": "26TR6ha1XZ2lPA30AU8iMV",
+      "genres": [
+        "rap",
+        "hip hop"
       ]
     }
   ]
