@@ -10,16 +10,6 @@
       ]
     },
     {
-      "title": "Jours Heureux",
-      "artist": "may may?",
-      "link": "https://www.youtube.com/watch?v=j7ot5LMONBM",
-      "spotify_id": "61QS1sxCEsIL14EpJFQ8NS",
-      "genres": [
-        "electro",
-        "dance"
-      ]
-    },
-    {
       "title": "LE GROOVE D'UNE CHANSON TRISTE",
       "artist": "Odetto",
       "link": "https://www.youtube.com/watch?v=SbIa-0ztc7M",
@@ -27,6 +17,16 @@
       "genres": [
         "rap",
         "hip hop"
+      ]
+    },
+    {
+      "title": "Jours Heureux",
+      "artist": "may may?",
+      "link": "https://www.youtube.com/watch?v=j7ot5LMONBM",
+      "spotify_id": "61QS1sxCEsIL14EpJFQ8NS",
+      "genres": [
+        "electro",
+        "dance"
       ]
     }
   ]
