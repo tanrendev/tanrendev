@@ -1,15 +1,6 @@
 {
   "tracks": [
     {
-      "title": "david lynch",
-      "artist": "SCHWARZ",
-      "link": "https://www.youtube.com/watch?v=hDMX3tpNcus",
-      "spotify_id": "6sS1c697sAT9WmMo5h2DYO",
-      "genres": [
-        "pop"
-      ]
-    },
-    {
       "title": "LE GROOVE D'UNE CHANSON TRISTE",
       "artist": "Odetto",
       "link": "https://www.youtube.com/watch?v=SbIa-0ztc7M",
@@ -28,6 +19,13 @@
         "electro",
         "dance"
       ]
+    },
+    {
+      "title": "Lotus",
+      "artist": "Fakear",
+      "link": "https://www.youtube.com/watch?v=Gq4Jt3r4gy8",
+      "spotify_id": "05ODheHCEU3AdE1kQ7ANY3",
+      "genres": []
     }
   ]
 }
