@@ -11,20 +11,17 @@
       ]
     },
     {
-      "title": "Jours Heureux",
-      "artist": "may may?",
-      "link": "https://www.youtube.com/watch?v=j7ot5LMONBM",
-      "spotify_id": "61QS1sxCEsIL14EpJFQ8NS",
-      "genres": [
-        "electro",
-        "dance"
-      ]
-    },
-    {
       "title": "Lotus",
       "artist": "Fakear",
       "link": "https://www.youtube.com/watch?v=Gq4Jt3r4gy8",
       "spotify_id": "05ODheHCEU3AdE1kQ7ANY3",
+      "genres": []
+    },
+    {
+      "title": "Crayon noir",
+      "artist": "Orphia",
+      "link": "https://www.youtube.com/watch?v=Y5Oo4ub8rng",
+      "spotify_id": "7qsrRwPrDRMPprD2119PU6",
       "genres": []
     }
   ]
