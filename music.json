@@ -1,20 +1,17 @@
 {
   "tracks": [
     {
-      "title": "LE GROOVE D'UNE CHANSON TRISTE",
-      "artist": "Odetto",
-      "link": "https://www.youtube.com/watch?v=SbIa-0ztc7M",
-      "spotify_id": "26TR6ha1XZ2lPA30AU8iMV",
-      "genres": [
-        "rap",
-        "hip hop"
-      ]
-    },
-    {
       "title": "Lotus",
       "artist": "Fakear",
       "link": "https://www.youtube.com/watch?v=Gq4Jt3r4gy8",
       "spotify_id": "05ODheHCEU3AdE1kQ7ANY3",
+      "genres": []
+    },
+    {
+      "title": "Il faut que tu m'attendes",
+      "artist": "Johnny Jane",
+      "link": "https://www.youtube.com/watch?v=jDxRM5KIzY8",
+      "spotify_id": "1m2gwUIMW2EtbqgmUhn9jo",
       "genres": []
     },
     {
