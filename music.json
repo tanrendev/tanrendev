@@ -8,17 +8,17 @@
       "genres": []
     },
     {
+      "title": "Amazone",
+      "artist": "Makoto San",
+      "link": "https://www.youtube.com/watch?v=NESDB5Lx9q4",
+      "spotify_id": "3pRjXizCOXNRkcatyhizqr",
+      "genres": []
+    },
+    {
       "title": "Il faut que tu m'attendes",
       "artist": "Johnny Jane",
       "link": "https://www.youtube.com/watch?v=jDxRM5KIzY8",
       "spotify_id": "1m2gwUIMW2EtbqgmUhn9jo",
-      "genres": []
-    },
-    {
-      "title": "le monde avant toi",
-      "artist": "Duno",
-      "link": "https://www.youtube.com/watch?v=yLm8gjilOt4",
-      "spotify_id": "253ohfpxgcz7An6rpLzxLx",
       "genres": []
     }
   ]

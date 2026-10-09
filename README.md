@@ -33,8 +33,8 @@ Backend systems · Python · application security
 
 <!-- music:start -->
 <a href="https://www.youtube.com/watch?v=1YzLVS26DYs"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-primary-dark.svg"><img src="assets/music-primary-light.svg" alt="Now spinning: jamais danser! by Nikola" width="100%"></picture></a>
-<a href="https://www.youtube.com/watch?v=jDxRM5KIzY8"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-1-dark.svg"><img src="assets/music-row-1-light.svg" alt="Il faut que tu m&#x27;attendes by Johnny Jane" width="100%"></picture></a>
-<a href="https://www.youtube.com/watch?v=yLm8gjilOt4"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-2-dark.svg"><img src="assets/music-row-2-light.svg" alt="le monde avant toi by Duno" width="100%"></picture></a>
+<a href="https://www.youtube.com/watch?v=NESDB5Lx9q4"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-1-dark.svg"><img src="assets/music-row-1-light.svg" alt="Amazone by Makoto San" width="100%"></picture></a>
+<a href="https://www.youtube.com/watch?v=jDxRM5KIzY8"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/music-row-2-dark.svg"><img src="assets/music-row-2-light.svg" alt="Il faut que tu m&#x27;attendes by Johnny Jane" width="100%"></picture></a>
 <!-- music:end -->
 
 #### `// reach`
