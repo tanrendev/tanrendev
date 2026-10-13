@@ -19,12 +19,6 @@
       "language": "Luau"
     },
     {
-      "name": "paperboy",
-      "url": "https://github.com/tanrendev/paperboy",
-      "description": "A paperboy for job boards",
-      "language": ""
-    },
-    {
       "name": "patina",
       "url": "https://github.com/tanrendev/patina",
       "description": "Noctalia plugin that switches wallpaper with light/dark mode",
