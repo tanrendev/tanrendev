@@ -16,7 +16,7 @@ Backend systems · Python · application security
 #### `// projects`
 
 <!-- projects:start -->
-- [dotfiles](https://github.com/tanrendev/dotfiles): NixOS flake: Hyprland with Noctalia, home-manager, wallpaper theming
+- [dotfiles](https://github.com/tanrendev/dotfiles): NixOS flake: Umbriel with Noctalia, home-manager, wallpaper theming
 - [familiar](https://github.com/tanrendev/familiar): Noctalia plugin with an animated pixel owl in the bar
 - [noctalia-plugin-template](https://github.com/tanrendev/noctalia-plugin-template): Template for a single-plugin Noctalia source
 - [patina](https://github.com/tanrendev/patina): Noctalia plugin that switches wallpaper with light/dark mode

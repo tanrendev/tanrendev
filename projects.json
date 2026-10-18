@@ -3,7 +3,7 @@
     {
       "name": "dotfiles",
       "url": "https://github.com/tanrendev/dotfiles",
-      "description": "NixOS flake: Hyprland with Noctalia, home-manager, wallpaper theming",
+      "description": "NixOS flake: Umbriel with Noctalia, home-manager, wallpaper theming",
       "language": "Nix"
     },
     {
