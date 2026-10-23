@@ -8,17 +8,17 @@
       "genres": []
     },
     {
-      "title": "Amazone",
-      "artist": "Makoto San",
-      "link": "https://www.youtube.com/watch?v=NESDB5Lx9q4",
-      "spotify_id": "3pRjXizCOXNRkcatyhizqr",
-      "genres": []
-    },
-    {
       "title": "I Hope You Die",
       "artist": "Orphia",
       "link": "https://www.youtube.com/watch?v=0X7bFdeS67U",
       "spotify_id": "5GisdoR32tRBnoFNlTJiWb",
+      "genres": []
+    },
+    {
+      "title": "Locked Away",
+      "artist": "Gabzito",
+      "link": "https://www.youtube.com/watch?v=85CLbxM8gQ8",
+      "spotify_id": "0fahUDIRujvV16hAQNtWha",
       "genres": []
     }
   ]
