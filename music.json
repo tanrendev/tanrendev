@@ -1,13 +1,6 @@
 {
   "tracks": [
     {
-      "title": "jamais danser!",
-      "artist": "Nikola",
-      "link": "https://www.youtube.com/watch?v=1YzLVS26DYs",
-      "spotify_id": "3DpKI6j6d8IDt1fERqHGk6",
-      "genres": []
-    },
-    {
       "title": "Locked Away",
       "artist": "Gabzito",
       "link": "https://www.youtube.com/watch?v=85CLbxM8gQ8",
@@ -19,6 +12,13 @@
       "artist": "Orphia",
       "link": "https://www.youtube.com/watch?v=0X7bFdeS67U",
       "spotify_id": "5GisdoR32tRBnoFNlTJiWb",
+      "genres": []
+    },
+    {
+      "title": "Amazone",
+      "artist": "Makoto San",
+      "link": "https://www.youtube.com/watch?v=NESDB5Lx9q4",
+      "spotify_id": "3pRjXizCOXNRkcatyhizqr",
       "genres": []
     }
   ]
