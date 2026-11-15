@@ -1,3 +1,4 @@
+import contextlib
 import json
 import sys
 import urllib.error
@@ -73,33 +74,28 @@ def fetch_music() -> int:
         print(f"fetch: spotify request failed: {error}", file=sys.stderr)
         return 1
 
-    tracks = []
-    for entry in fresh:
-        known = current.get(entry["spotify_id"])
-        if known is not None:
-            tracks.append(known)
-            continue
-        try:
-            genres = sources.deezer_genres(title=entry["title"], artist=entry["artist"])
-        except urllib.error.URLError:
-            genres = []
-        try:
-            link = sources.youtube_link(title=entry["title"], artist=entry["artist"])
-        except urllib.error.URLError:
-            link = None
-        tracks.append(
-            {
-                "title": entry["title"],
-                "artist": entry["artist"],
-                "link": link or f"https://open.spotify.com/track/{entry['spotify_id']}",
-                "spotify_id": entry["spotify_id"],
-                "genres": genres,
-            }
-        )
-
+    tracks = [resolve_track(entry=entry, known=current.get(entry["spotify_id"])) for entry in fresh]
     text = json.dumps({"tracks": tracks}, ensure_ascii=False, indent=2) + "\n"
     write_if_changed(path=path, content=text)
     return 0
+
+
+def resolve_track(*, entry: dict, known: dict | None) -> dict:
+    fallback = f"https://open.spotify.com/track/{entry['spotify_id']}"
+    track = {
+        "title": entry["title"],
+        "artist": entry["artist"],
+        "link": fallback,
+        "spotify_id": entry["spotify_id"],
+        "genres": [],
+    } | (known or {})
+    if not track["genres"]:
+        with contextlib.suppress(urllib.error.URLError):
+            track["genres"] = sources.deezer_genres(title=entry["title"], artist=entry["artist"])
+    if track["link"] == fallback:
+        with contextlib.suppress(urllib.error.URLError):
+            track["link"] = sources.youtube_link(title=entry["title"], artist=entry["artist"]) or fallback
+    return track
 
 
 def write_if_changed(*, path: Path, content: str) -> None:
