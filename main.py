@@ -73,6 +73,9 @@ def fetch_music() -> int:
     except urllib.error.URLError as error:
         print(f"fetch: spotify request failed: {error}", file=sys.stderr)
         return 1
+    if not fresh:
+        print("fetch: spotify returned no tracks, music.json kept", file=sys.stderr)
+        return 0
 
     tracks = [resolve_track(entry=entry, known=current.get(entry["spotify_id"])) for entry in fresh]
     text = json.dumps({"tracks": tracks}, ensure_ascii=False, indent=2) + "\n"
