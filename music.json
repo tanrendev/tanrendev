@@ -5,21 +5,27 @@
       "artist": "Gabzito",
       "link": "https://www.youtube.com/watch?v=85CLbxM8gQ8",
       "spotify_id": "0fahUDIRujvV16hAQNtWha",
-      "genres": []
+      "genres": [
+        "rock"
+      ]
     },
     {
       "title": "I Hope You Die",
       "artist": "Orphia",
       "link": "https://www.youtube.com/watch?v=0X7bFdeS67U",
       "spotify_id": "5GisdoR32tRBnoFNlTJiWb",
-      "genres": []
+      "genres": [
+        "pop"
+      ]
     },
     {
       "title": "Run",
       "artist": "Enfant Sauvage",
       "link": "https://www.youtube.com/watch?v=yt3mBzDzEho",
       "spotify_id": "0VketbjNX1j3CXfayHqY59",
-      "genres": []
+      "genres": [
+        "electro"
+      ]
     }
   ]
 }
