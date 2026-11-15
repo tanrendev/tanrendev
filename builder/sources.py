@@ -1,4 +1,5 @@
 import base64
+import http.client
 import json
 import os
 import time
@@ -17,6 +18,7 @@ CARD_TRACKS = 3
 MAX_GENRES = 3
 RETRYABLE_STATUS = {429, 500, 502, 503, 504}
 MAX_ATTEMPTS = 3
+FETCH_ERRORS = (OSError, http.client.HTTPException, ValueError, LookupError, TypeError)
 
 
 def missing_credentials() -> list[str]:
@@ -138,7 +140,7 @@ def _request_json(*, url: str, headers: dict[str, str] | None = None, body: byte
         except urllib.error.HTTPError as error:
             if error.code not in RETRYABLE_STATUS or attempt == MAX_ATTEMPTS - 1:
                 raise
-        except urllib.error.URLError:
+        except OSError, http.client.HTTPException:
             if attempt == MAX_ATTEMPTS - 1:
                 raise
         else:

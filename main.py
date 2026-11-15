@@ -1,7 +1,6 @@
 import contextlib
 import json
 import sys
-import urllib.error
 from pathlib import Path
 
 from builder import rendering, sources
@@ -70,8 +69,8 @@ def fetch_music() -> int:
     current = {track["spotify_id"]: track for track in json.loads(path.read_text(encoding="utf-8"))["tracks"]}
     try:
         fresh = sources.top_tracks()
-    except urllib.error.URLError as error:
-        print(f"fetch: spotify request failed: {error}", file=sys.stderr)
+    except sources.FETCH_ERRORS as error:
+        print(f"fetch: spotify request failed: {error!r}", file=sys.stderr)
         return 1
     if not fresh:
         print("fetch: spotify returned no tracks, music.json kept", file=sys.stderr)
@@ -93,10 +92,10 @@ def resolve_track(*, entry: dict, known: dict | None) -> dict:
         "genres": [],
     } | (known or {})
     if not track["genres"]:
-        with contextlib.suppress(urllib.error.URLError):
+        with contextlib.suppress(*sources.FETCH_ERRORS):
             track["genres"] = sources.deezer_genres(title=entry["title"], artist=entry["artist"])
     if track["link"] == fallback:
-        with contextlib.suppress(urllib.error.URLError):
+        with contextlib.suppress(*sources.FETCH_ERRORS):
             track["link"] = sources.youtube_link(title=entry["title"], artist=entry["artist"]) or fallback
     return track
 
