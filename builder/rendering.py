@@ -10,8 +10,16 @@ LIGHT = {
     "lead": "#A4380F",
     "hot": "#BF451C",
     "vinyl_a": "#211B14",
-    "vinyl_b": "#2C241C",
-    "sheen_opacity": "0.10",
+    "vinyl_b": "#3A3027",
+    "sheen_opacity": "0.14",
+    "wood": "#B5855A",
+    "wood_edge": "#8C6040",
+    "grain_opacity": "0.3",
+    "platter": "#D6CFC2",
+    "platter_dot": "#857D70",
+    "metal": "#E6E0D4",
+    "hardware": "#2A2420",
+    "ivory": "#F2EBDD",
 }
 DARK = {
     "panel": "#141B23",
@@ -22,8 +30,16 @@ DARK = {
     "lead": "#739ABF",
     "hot": "#E8703A",
     "vinyl_a": "#05070A",
-    "vinyl_b": "#10151C",
-    "sheen_opacity": "0.08",
+    "vinyl_b": "#18202A",
+    "sheen_opacity": "0.12",
+    "wood": "#55392A",
+    "wood_edge": "#39261B",
+    "grain_opacity": "0.4",
+    "platter": "#364250",
+    "platter_dot": "#74859A",
+    "metal": "#AEB9C5",
+    "hardware": "#14181D",
+    "ivory": "#D5CCBB",
 }
 
 THEMES = (("light", LIGHT), ("dark", DARK))
@@ -43,7 +59,7 @@ def render_primary(*, track: dict, palette: dict[str, str], template_text: str) 
     values = palette | {
         "title": escape(_truncate_to_width(text=track["title"], max_width=PRIMARY_TITLE_EM)),
         "artist": escape(track["artist"]),
-        "chips": _chips(genres=track.get("genres", [])[:3], palette=palette, x=210.0, y=150.0),
+        "chips": _chips(genres=track.get("genres", [])[:3], palette=palette, x=226.0, y=150.0),
     }
     return string.Template(template_text).substitute(values)
 
