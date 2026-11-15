@@ -44,7 +44,7 @@ def top_tracks() -> list[dict]:
 
 
 def deezer_genres(*, title: str, artist: str) -> list[str]:
-    query = urllib.parse.quote(f'artist:"{artist}" track:"{title}"')
+    query = urllib.parse.quote(f"{artist} {title}")
     hits = _request_json(url=f"https://api.deezer.com/search?q={query}&limit=5").get("data", [])
     for hit in hits:
         if hit["artist"]["name"].casefold() != artist.casefold() or hit["title"].casefold() != title.casefold():
